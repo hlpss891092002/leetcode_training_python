@@ -7,12 +7,11 @@ def isPalindrome(s):
                 ans_list.append(letter)
             if i.isnumeric():
                 ans_list.append(i)
-        ans = "".join(ans_list)
-        last_index = len(ans) - 1
-        for j in range(len(ans)):
-            if j == floor(len(ans)/2) and ans[j] == ans[last_index - j]:
+        last_index = len(ans_list) - 1
+        for j in range(len(ans_list)):
+            if j == floor(len(ans_list)/2) and ans_list[j] == ans_list[last_index - j]:
                 return True
-            if ans[j] == ans[last_index - j]:
+            if ans_list[j] == ans_list[last_index - j]:
                 continue
             else:
                 return False
