@@ -10,8 +10,4 @@ def test(s) :
             else :
                 return False
     return not stack
-
-
-# test("(){}}{")         
-# test("()[]{}")
-test("([])")
+    
